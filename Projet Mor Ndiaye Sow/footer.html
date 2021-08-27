@@ -1,0 +1,82 @@
+ <html>
+     <head>
+         <link rel="stylesheet" href="footer.css">
+     </head>
+
+     <style>
+      #mydiv {
+    width: 100%;
+    height: 100%;
+    }
+    .mycontent {
+    position: relative;
+    }
+    .mytext {
+    height: 0px;
+    padding-left: 10px;
+    overflow: hidden;
+    background: #1e1;
+    transition: height 0.5s ease;
+    }
+    label {
+    padding:10px;
+    }
+    input[type='checkbox'] {
+    border: 0px;
+    width: 0px;
+    margin: 5px 0px 15px 0px;
+    appearance: none;
+    }
+    input[type='checkbox']:after {
+      content: '\2795';
+      background: #1e1;
+      font-size: 18px;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      border-radius: 50%;
+    }
+  input[type='checkbox']:checked:after {
+   content: '\2796';
+   font-size: 12px
+    }
+    
+ input[type='checkbox']:checked ~ .mytext {
+    height: 100px;
+    padding-top: 10px;
+    }
+    </style>
+     <body>
+      <div id='mydiv'>
+        <div class='mycontent'>
+        <label for='option1'>
+        Question 1: Qui est Ubuntu?
+     </label>
+        <input id='option1' type='checkbox' name='viewmore' class='viewmore' >
+        <div class='mytext'>
+        Ubuntu est une fille qui aime se moquer des africains
+        </div>
+        </div>
+        
+        <div class='mycontent'>
+        <label for='option2'>
+        Question 2: Comment est Ubuntu?
+        </label>
+        <input id='option2' type='checkbox' name='viewmore' class='viewmore'>
+        <div class='mytext'>
+        Bizarre
+        </div>
+        </div>
+     
+     <div class='mycontent'>
+        <label for='option3'>
+        Question 3: Que fait Ubuntu
+        </label>
+        <input id='option3' type='checkbox' name='viewmore' class='viewmore'>
+        <div class='mytext'>
+        Coder, coder et coder rek!
+        </div>
+        </div>
+     </div>
+</body>
+ </html>
